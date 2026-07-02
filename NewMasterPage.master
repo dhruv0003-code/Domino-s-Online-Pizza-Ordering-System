@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NewMasterPage.master.cs" Inherits="NewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: medium;
+        }
+        .style2
+        {
+            font-size: large;
+        }
+        .style3
+        {
+            font-size: x-large;
+        }
+        .style4
+        {
+            width: 71%;
+        }
+        .style7
+        {
+            width: 168px;
+            text-align: center;
+        }
+        .style8
+        {
+            width: 192px;
+            text-align: center;
+        }
+        .style10
+        {
+            width: 172px;
+            text-align: center;
+        }
+        .style11
+        {
+            width: 167px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-position: center center; background-image: none; height: 561px;">
+        <span class="style1" style="color: #00FFFF">Welcome to Domino&#39;s Pizza</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <strong><span class="style3">&nbsp; </span></strong><span class="style3">
+        <strong style="color: #00FFFF">&nbsp;Domino&#39;s Online Pizza Ordering System</strong></span><span 
+            class="style2"><br />
+        </span>
+        <table class="style4">
+            <tr>
+                <td class="style10">
+                    &nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink1" runat="server" 
+            NavigateUrl="~/Personalized Offers.aspx">Personalized Offers</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="style7">
+                    &nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Rewards.aspx">Rewards</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="style7">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Payments.aspx">Payments</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="style8">
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+                </td>
+                <td class="style11">
+                    <asp:Menu ID="Menu1" runat="server">
+                        <Items>
+                            <asp:MenuItem Text="Food Item" Value="Food Item">
+                                <asp:MenuItem NavigateUrl="~/Pizza.aspx" Text="Pizza" Value="Pizza">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Garlic Bread.aspx" Text="Garlic Bread" 
+                                    Value="Garlic Bread"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Cold Drinks.aspx" Text="Cold Drinks" 
+                                    Value="Cold Drinks"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
